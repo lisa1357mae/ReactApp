@@ -36,7 +36,7 @@ var Letter = React.createClass({
     var letterStyle = {
       padding: 10,
       margin: 10,
-      backgroundColor: "yellow",
+      backgroundColor: this.props.bgcolor,
       color: "purple",
       display: "inline-block",
       fontFamily: "monospace",
@@ -55,10 +55,10 @@ var destination = document.querySelector("#container");
 
 ReactDOM.render (
   <div>
-  <Letter>L</Letter>
-  <Letter>I</Letter>
-  <Letter>S</Letter>
-  <Letter>A</Letter>
+  <Letter bgcolor="#58B3FF">L</Letter>
+  <Letter bgcolor="#FF605F">I</Letter>
+  <Letter bgcolor="#FFD52E">S</Letter>
+  <Letter bgcolor="#49DD8E">A</Letter>
 
   </div>,
   destination
