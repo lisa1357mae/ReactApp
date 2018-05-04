@@ -33,8 +33,18 @@
 
 var Letter = React.createClass({
   render: function() {
+    var letterStyle = {
+      padding: 10,
+      margin: 10,
+      backgroundColor: "yellow",
+      color: "purple",
+      display: "inline-block",
+      fontFamily: "monospace",
+      fontSize: "32",
+      textAlign: "center",
+    };
     return (
-      <div className="letter">
+      <div style={letterStyle}>
       {this.props.children}
       </div>
     );
